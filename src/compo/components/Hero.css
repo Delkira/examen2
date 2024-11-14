@@ -1,0 +1,84 @@
+.hero {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    overflow: hidden;
+}
+.hero img{
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.hero h1 {
+    position: absolute;
+    right: 40px;
+    top: 0%;
+    color: #cabb12;
+    font-size: 2.5em;
+}
+
+.hero p {
+    position: absolute;
+    right: 40px;
+    color: #bfbbb9;
+    font-size: 1.5em;
+}
+
+.hero p:first-of-type {
+    top: 60px; 
+}
+
+.hero p:last-of-type {
+    top: 80px;
+}
+
+.caja {
+    background-color: #c4d7aa;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    opacity: 0.8;
+
+}
+.ti {
+    font-size: 1.0em;
+    color: black;
+}
+
+.sub {
+    font-size: 0.8em;
+    color: #8b9a70; 
+}
+
+.btn1{
+    padding: 20px 0;
+    width: 25%;
+    text-align: center;
+    border-left: 1px solid black;
+    color: #8b9a70;
+}
+.btn1 .ti a {
+    text-decoration: none; 
+    color: black; 
+}
+
+.btn1:active {
+    background-color: #99be61;
+    color: white;
+}
+.btn1:active .ti,.btn1:active .sub {
+    color: white; 
+}
+@media (max-width: 768px){
+    .hero {
+        height: 300px; /* Altura ajustada para pantallas pequeñas */
+    }
+
+}
